@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Surprise</title>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+</head>
+<style type="text/css">
+	
+     body{
+     	margin: 0px;
+   	padding: 0px;
+     	background: #BBF97D;
+background: -webkit-linear-gradient(left, #BBF97D, #85FFC3);
+background: -moz-linear-gradient(left, #BBF97D, #85FFC3);
+background: linear-gradient(to right, #BBF97D, #85FFC3);
+     }
+
+
+   *{
+   	margin: 0px;
+   	padding: 0px;
+   	font-family: "montserrat",monospace;
+   	box-sizing: border-box;
+   }
+   .gal-sec{
+   	width: 100%;
+   	padding: 20px 0;
+
+   }
+   .inn-width{
+   	width: 100%;
+   	max-width: 1000px;
+   	margin: auto;
+   	padding: 0 20px;
+   }
+
+
+
+   .gal-sec h1{
+   	text-align: center;
+   	text-transform: uppercase;
+   color: #fff;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+   }
+   h1{
+   	background-image: url("https://s2.best-wallpaper.net/wallpaper/1920x1200/1311/Green-nature-branch-leaves-bokeh_1920x1200.jpg");
+   }
+
+  .gal-sec p{
+  	font-weight: bold;
+   	top: 50px;
+   	text-align: center;
+   	text-transform: uppercase;
+   color: #366181;
+   opacity: .6;
+   }
+   
+
+
+   .bord{
+   	width: 100px;
+   	height: 90px;
+   	
+   	margin: 10px;
+   }
+
+   .gal-sec .gall{
+   	display: flex;
+   	
+   }
+   .gal-sec .image{
+   	flex: 40%;
+   	overflow: hidden;
+   	cursor: pointer;
+   }
+   .gal-sec .image img{
+   	border-radius: 10px;
+   	width: 95%;
+   	height: 80%;
+   	transition: 0.4s;
+   }
+
+   .gal-sec .image:hover img{
+   	transform:  scale(1.4) rotate(15deg);
+   }
+   
+
+   @media screen and (max-width: 960px){
+   	.gal-sec .image{
+   		flex: 33.33%;
+   	}
+   }
+
+    @media screen and (max-width: 768px){
+   	.gal-sec .image{
+   		flex: 50%;
+   	}
+   }
+
+    @media screen and (max-width: 480px){
+   	.gal-sec .image{
+   		flex: 100%;
+   	}
+   }
+   .list{
+   	width: 400px;
+        height: 210px;
+        position: absolute;
+        top: 11%;
+        left: 1%;
+        transform: translate(-30%,-30%);
+        opacity: .3;
+
+   }
+   .Lis2{
+   	-o-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+	-webkit-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+	
+
+   	width: 400px;
+        height: 210px;
+        position: absolute;
+        top: 11%;
+        left: 79%;
+        transform: translate(-30%,-30%);
+        opacity: .3;
+
+   }
+
+
+
+ .slideshow {
+  list-style-type: none;
+}
+
+/** SLIDESHOW **/
+.slideshow,
+.slideshow:after { 
+    top: -16px; /*Not sure why I needed this fix*/
+		position: fixed;
+    width: 80%;
+    height: 80%;
+     top: 350px;
+    left: 400px;
+    z-index: 0; 
+}
+
+.slideshow li span { 
+		position: absolute;
+    width: 50%;
+    border-radius: 10px;
+    height: 50%;
+   
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 30s linear infinite 0s; 
+}
+
+
+
+.slideshow li:nth-child(1) span { 
+    background-image: url("file:///C:/Users/Владимир/Desktop/ДляSait/Surprise/2018-06-11_21-04-26.png"); 
+}
+.slideshow li:nth-child(2) span { 
+    background-image: url("file:///C:/Users/Владимир/Desktop/ДляSait/Surprise/2018-06-09_18-08-24.png");
+    animation-delay: 6s; 
+}
+.slideshow li:nth-child(3) span { 
+    background-image: url("file:///C:/Users/Владимир/Desktop/ДляSait/Surprise/2018-07-22_00-06-54.png");
+    animation-delay: 12s; 
+}
+.slideshow li:nth-child(4) span { 
+    background-image: url("file:///C:/Users/Владимир/Desktop/ДляSait/Surprise/2018-07-07_22-06-39.png");   
+    animation-delay: 18s; 
+}
+.slideshow li:nth-child(5) span { 
+    background-image: url("file:///C:/Users/Владимир/Desktop/ДляSait/Surprise/2018-06-17_02-52-16.png");
+    animation-delay: 24s; 
+}
+.slideshow li:nth-child(6) span { 
+    background-image: url("file:///C:/Users/Владимир/Desktop/ДляSait/Surprise/2018-06-25_21-28-49.png");
+    animation-delay: 30s; 
+}
+
+
+
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+
+@keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+
+.no-cssanimations .cb-slideshow li span {
+	opacity: 1;
+}
+.opd{
+text-align: center;
+    	opacity: .4;
+    	text-transform: uppercase;
+    	color: #6580B8;
+		width: 90px;
+		height: 50px;
+		top: 80%;
+    	left: 40%;
+    	transform: translate(-50%,-50%);
+}
+
+</style>
+<body>
+<img class="list" src="http://www.playcast.ru/uploads/2015/09/17/15105140.gif">
+<img  class="Lis2"src="https://img1.picmix.com/output/stamp/normal/8/7/9/1/461978_fcb57.gif">
+
+<div class="gal-sec">
+	<div class="inn-width">
+		
+		<h1> ◉ ⚪ mini_Gallery ⚪ ◉ </h1>
+		<p>◦● А здесь ты можешь посмотреть на скринчики и мило поностальгировать по тем старым добрым временам") ●◦</p>
+		<a class="opd" href="file:///C:/Users/Владимир/Desktop/ДляSait/Surprise4.html"><center> ◎ ◯ ОпДшка ◯ ◎ </center></a>
+		<div class="bord"></div>
+		<div class="gall">
+
+			<a href="file:///C:/Users/Владимир/Desktop/ДляSait/Surprise/2018-05-31_23-13-13.png" class="image">
+				<img src="file:///C:/Users/Владимир/Desktop/ДляSait/Surprise/2018-05-31_23-13-13.png" alt="">
+			</a>
+
+             <a href="file:///C:/Users/Владимир/Desktop/ДляSait/Surprise/2018-06-01_13-43-00.png" class="image">
+				<img src="file:///C:/Users/Владимир/Desktop/ДляSait/Surprise/2018-06-01_13-43-00.png" alt="">
+			</a>
+
+
+			<a href="file:///C:/Users/Владимир/Desktop/ДляSait/Surprise/2018-08-19_03-29-01.png" class="image">
+				<img src="file:///C:/Users/Владимир/Desktop/ДляSait/Surprise/2018-08-19_03-29-01.png" alt="">
+			</a>
+
+
+			<a href="file:///C:/Users/Владимир/Desktop/ДляSait/Surprise/2018-09-22_15-29-53.png" class="image">
+				<img src="file:///C:/Users/Владимир/Desktop/ДляSait/Surprise/2018-09-22_15-29-53.png" alt="">
+			</a>		
+
+			<a href="file:///C:/Users/Владимир/Desktop/ДляSait/Surprise/2018-06-14_15-38-37.png" class="image">
+				<img src="file:///C:/Users/Владимир/Desktop/ДляSait/Surprise/2018-06-14_15-38-37.png" alt="">
+			</a>
+
+			<a href="file:///C:/Users/Владимир/Desktop/ДляSait/Surprise/2018-07-19_13-36-12.png" class="image">
+				<img src="file:///C:/Users/Владимир/Desktop/ДляSait/Surprise/2018-07-19_13-36-12.png" alt="">
+			</a>
+
+		
+	
+
+
+
+
+
+
+		</div>
+	</div>
+</div>
+      
+
+      
+      <ul class="slideshow">
+	<li><span></span></li>
+  <li><span>2</span></li>
+	<li><span></span></li>
+	<li><span></span></li>
+	<li><span></span></li>
+	<li><span></span></li>
+</ul>
+
+
+
+   <script type="text/javascript">
+   	$(".gall").magnificPopup({
+   		delegate: 'a',
+   		type:'image',
+   		gall:{
+   			enabled:true
+   		}
+   	})
+
+     
+      var slides = document.getElementsByClassName("slide");
+  var index = 0;
+  function goLeft() {
+    if(index == 0) index = slides.length - 1;
+    else index--;
+
+    slides[0].style.marginLeft = "-" + index * 600 + "px";
+  }
+  function goRight() {
+    if(index == slides.length -1) index = 0;
+    else index++;
+
+    slides[0].style.marginLeft = "-" + index * 600 + "px";
+  }
+
+  //for auto Navigation
+
+
+
+   </script>
+
+</body>
+</html>

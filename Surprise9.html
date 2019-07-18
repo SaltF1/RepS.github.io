@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Surprise</title>
+</head>
+<style type="text/css">
+	
+@import "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+*{
+  margin: 1px;
+  padding: 1px;
+  font-family: "Montserrat",sans-serif;
+  list-style: none;
+}
+body{
+	margin: 200px;
+	padding: 200px;
+	
+background-image: url("https://orig00.deviantart.net/a427/f/2017/270/8/9/pastel_sky_by_ryllcat21-dboq3yo.gif") ;
+background-size: cover;
+}
+.metro{
+
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.item{
+	border-radius: 10px;
+  width: 120px;
+  height: 120px;
+  float: left;
+  margin: 4px;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+.item:hover{
+  transform: scale(0.9);
+}
+.item i{
+  font-size: 60px;
+  line-height: 90px;
+  opacity: 0.8;
+}
+.item span{
+  opacity: 0.8;
+  position: absolute;
+  bottom: 6px;
+  left: 6px;
+  font-size: 16px;
+}
+.i1{
+  background: #CE80FF;
+}
+
+.i2{
+  background: #80FF8F;
+  width: 246px;
+}
+
+.i3{
+  background: #FF80BA;
+}
+
+.i4{
+  background: #CCFF57;
+}
+
+.i5{
+  background: #FFBD7A;
+}
+
+.BubleS{
+		
+		width: 30%;
+		height: 30%;
+		z-index: 0px;
+		
+        top: 10px;
+        left: 100px; 
+
+	}
+	.bubl{
+		position: absolute;
+		bottom: 0px;
+	    z-index: 0px;
+		background-color: #E0FFFC;
+		border-radius: 50%;
+		opacity: 0.5;
+		animation: flying 10s infinite ease-in;
+	}
+	.bubl:nth-child(1){
+			width: 40px;
+		height: 40px;
+		left: 10%;
+		animation-direction: 8s;
+
+	}
+	.bubl:nth-child(2){
+		width: 20px;
+		height: 20px;
+		left: 20%;
+		animation-direction: 5s;
+		animation-delay: 1s;
+	}
+	.bubl:nth-child(3){
+		width: 50px;
+		height: 50px;
+		left: 35%;
+		animation-direction: 10s;
+		animation-delay: 2s;
+	}
+	.bubl:nth-child(4){
+		width: 80px;
+		height: 80px;
+		left: 50%;
+		animation-direction: 7s;
+		animation-delay: 0s;
+	}
+	.bubl:nth-child(5){
+		width: 34px;
+		height: 34px;
+		left: 55%;
+		animation-direction: 6s;
+		animation-delay: 2s;
+	}
+	.bubl:nth-child(6){
+		width: 45px;
+		height: 45px;
+		left: 65%;
+		animation-direction: 8s;
+		animation-delay: 4s;
+	}
+	.bubl:nth-child(7){
+		width: 25px;
+		height: 25px;
+		left: 75%;
+		animation-direction: 7s;
+		animation-delay: 2s;
+	}
+	.bubl:nth-child(8){
+		width: 80px;
+		height: 80px;
+		left: 80%;
+		animation-direction: 6s;
+		animation-delay: 1s;
+	}
+	.bubl:nth-child(9){
+		width: 15px;
+		height: 15px;
+		left: 70%;
+		animation-direction: 9s;
+		animation-delay: 0s;
+	}
+	.bubl:nth-child(10){
+		width: 50px;
+		height: 50px;
+		left: 85%;
+		animation-direction: 5s;
+		animation-delay: 3s;
+	}
+	@keyframes flying{
+		0%{
+			bottom: -100px;
+			transform: translateX(0px);
+		}
+		50%{
+			transform: translateX(100px);
+		}
+		100%{
+			bottom: 1080px;
+			transform: translateX(-200px);
+		}
+	}
+	a{
+		color:  white;
+	}
+
+</style>
+<body>
+
+   <div class="metro">
+      <div class="l1">
+      <a href="file:///C:/Users/Владимир/Desktop/ДляSait/Surprise8.html"> <li class="item i1">
+            <i class="ion-ios-world" ></i>
+            <span>ИНТЕРЕСНОЕ</span>
+        </li></a> 
+
+      <a href="file:///C:/Users/Владимир/Desktop/ДляSait/Surprise3.html">  <li class="item i2">
+            <i class="ion-images"  ></i>
+            <span>ОПДШКА</span>
+        </li></a>
+      </div>
+
+      <div class="l2">
+        <a href="file:///C:/Users/Владимир/Desktop/ДляSait/Surprise2.html"><li class="item i3">
+            <i class="ion-social-apple" ></i>
+            <span>К ЯБЛОЧКУ</span>
+        </li></a>
+
+       <a href="file:///C:/Users/Владимир/Desktop/ДляSait/Surprise7.html"> <li class="item i4">
+            <i class="ion-ios-eye" ></i>
+            <span>ГЛАЗИК</span>
+        </li></a>
+
+       <a href="file:///C:/Users/Владимир/Desktop/ДляSait/Surprise5.html"> <li  class="item i5">
+            <i class="ion-ios-paper" ></i>
+            <span>СПИСОК</span>
+        </li></a>
+      </div>
+
+
+
+    </div>
+
+    <div class="BubleS">
+  	 <div class="bubl"></div>
+  	 <div class="bubl"></div>
+  	 <div class="bubl"></div>
+  	 <div class="bubl" ></div>
+  	 <div class="bubl"></div>
+  	 <div class="bubl"></div>
+  	 <div class="bubl"></div>
+  	 <div class="bubl"></div>
+  	 <div class="bubl"></div>
+  	 <div class="bubl"></div>
+  </div>
+
+</body>
+</html>

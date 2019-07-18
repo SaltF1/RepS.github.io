@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	body{
+		margin: 0px;
+		padding: 0px;
+		background-color: #f4e788;
+	}
+	.eyeS{
+		position: absolute;
+		top: 40%;
+		left: 0%;
+		transform: translateY(-50%);
+		width: 100%;
+		text-align: center;
+	}
+	.eye{
+		width: 210px;
+		height: 220px;
+		background: #EBFFED;
+		display: inline-block;
+		margin: 40px;
+		border-radius: 1%;
+		position: relative;
+		overflow: hidden;
+		border: 20px solid #424528;
+	}
+	.bAll{
+		width: 80px;
+		height: 100px;
+		background: #1bb294;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: 10%;
+		border: 15px solid #1dc09f;
+	}
+	.morda{
+
+		width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 60%;
+        left: 42%;
+        transform: translate(-30%,-30%);
+        
+	}
+	.ruman{
+		width: 450px;
+        height: 90px;
+       position: absolute;
+        top: 60%;
+        left: 32%;
+        
+
+	}
+	.dialog{
+		color: #BAB591;
+		border-radius: 10px;
+	}
+	h2{
+			font-size: 30px;
+        text-align: center;
+        
+        color: #EBFEF1;
+    
+	}
+	.brd{
+		opacity: .7;
+		border-radius: 20px;
+		width: 320px;
+   	height: 167px;
+   	background: #555134;
+   	margin: 10px;
+	}
+	.flw{
+		  	width: 40px;
+        height: 30px;
+        position: absolute;
+        top: 28%;
+        left: 23%;
+        transform: translate(-30%,-30%);
+        opacity: .8;
+	}
+	.flw2{
+			width: 40px;
+        height: 30px;
+        position: absolute;
+        top: 3%;
+        left: 1%;
+        transform: translate(-30%,-30%);
+        opacity: .8;
+
+	}
+	
+
+</style>
+<body>
+
+
+	
+
+<div class="brd">
+    <div class="dialog">
+    	<h2>◦А что это ты у нас тут делаешь?~◦</h2>
+    	<h2>◦ Я ведь слежу за тобой) ◦</h2>
+   
+    </div>
+</div>
+
+
+<center><img class="flw" src="file:///C:/Users/Владимир/Desktop/ДляSait/Surprise/ФфЦпизлваа.png"></center>
+<center><img class="flw2" src="file:///C:/Users/Владимир/Desktop/ДляSait/Surprise/ФфЦпизлаа.png"></center>
+
+
+	<div class="eyeS">
+		<div class="eye">
+			<div class="bAll"></div>
+		</div>
+
+
+		<div class="eye">
+			<div class="bAll"></div>
+		</div>
+	</div>
+	<center><img class="ruman" src="file:///C:/Users/Владимир/Pictures/Новая%20папка%203/Новая%20папка/МРумян.png"></center>
+<center>	<img class="morda" src="file:///C:/Users/Владимир/Pictures/Новая%20папка%203/Новая%20папка/Мордашка2.png"></center>
+
+
+
+
+<script type="text/javascript">
+	var bAlls = document.getElementsByClassName("bAll");
+document.onmousemove = function(){
+	  var x = event.clientX * 100 / window.innerWidth + "%";
+    var y = event.clientY * 100 / window.innerHeight + "%";
+	  //event.clientX => get the horizontal coordinate of the mouse
+    //event.clientY => get the Vertical coordinate of the mouse
+    //window.innerWidth => get the browser width
+    //window.innerHeight => get the browser height
+
+    for(var i=0;i<2;i++){
+      bAlls[i].style.left = x;
+      bAlls[i].style.top = y;
+      bAlls[i].style.transform = "translate(-"+x+",-"+y+")";
+    }
+}
+
+</script>
+</body>
+</html>
